@@ -13,27 +13,30 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 60px;
     background-color: rgba(0,0,0,0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     font-family: 'Roboto', sans-serif;
-    z-index: 1;
 }
 
 .logo{
-    color: #e6e6ea;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 5px;
-    font-size: 20px;
+    width: 50px;
+}
+
+.logo svg{
+    fill: hsl(0,0%,70%);
+    transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.logo svg:hover{
+    fill: hsl(0,0%,100%);
 }
 
 .nav_links{
     display: flex;
     justify-content: space-around;
     width: 40%;
-    z-index: -1;
 }
 
 .nav_links li{
@@ -41,14 +44,14 @@ nav{
 }
 
 .nav_links a{
-    color: #bebec2;
+    color: hsl(0,0%,70%);
     text-decoration: none;
     font-size: 14px;
-    transition: 0.3s;
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .nav_links a:hover{
-    color: #e6e6ea;
+    color: hsl(0,0%,100%);
 }
 
 /* Menu Burger */
@@ -58,19 +61,23 @@ nav{
 }
 
 .menu_burger div{
-    background-color: #e6e6ea;
+    background-color: hsl(0,0%,70%);
     width: 25px;
     height: 3px;
     margin: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.menu_burger:hover div{
+    background-color: hsl(0,0%,100%);
 }
 
 @media screen and (max-width:768px){
     .nav_links{
         position: absolute;
-        height: 40vh;
-        top: 8vh;
-        background-color: rgba(0,0,0,0.8);
+        height: 300px;
+        top: 60px;
+        background: rgba(0,0,0,0.8);
         -webkit-backdrop-filter: saturate(180%) blur(20px);
         backdrop-filter: saturate(180%) blur(20px);
         display: flex;
@@ -78,7 +85,7 @@ nav{
         align-items: center;
         width: 100%;
         transform: translateY(-100%);
-        
+        z-index: -1;
     }
     .nav_links li{
         opacity: 0;
@@ -121,48 +128,102 @@ nav{
 /* /////////////////////////// */
 
 
+/* Hero Image */
+.hero_image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/davids.jpeg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero_title{
+    font-size: 32px;
+}
+
+.hero_sub_title{
+    font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
 /* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     z-index: -2;
   }
-  
-  .gallery_tile {
 
-  }
-  
-  .tile_img {
-    display: block;
-    width: 100%;
-  }
+.gallery_tile{
+    text-decoration: none;
+}
 
-  @media (min-width: 640px) {
-    .gallery {
-        grid-template-columns: repeat(3,1fr);
-      }
-  }
+.tile_overlay{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
-  @media (min-width: 992px) {
-    .gallery {
-        grid-template-columns: repeat(4,1fr);
-      }
-  }
+.gallery_tile:hover .tile_overlay{
+    opacity: 1;
+}
 
-  @media (min-width: 1200px) {
-    .gallery {
-        grid-template-columns: repeat(5,1fr);
-      }
-  }
+
+.tile_title{
+    font-size: 30px;
+}
+
+.tile_sub_title{
+    font-size: 14px;
+}
   
-  @media (min-width: 1440px) {
-    .gallery {
-        grid-template-columns: repeat(6,1fr);
-      }
-  }
-  
-  @media (min-width: 1680px) {
-    .gallery {
-        grid-template-columns: repeat(7,1fr);
-      }
-  }
+.tile_img {
+display: block;
+width: 100%;
+}
+
+@media (min-width: 640px) {
+.gallery {
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 992px) {
+.gallery {
+    grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+.gallery {
+    grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+.gallery {
+    grid-template-columns: repeat(6,1fr);
+    }
+}
+
+@media (min-width: 1680px) {
+.gallery {
+    grid-template-columns: repeat(7,1fr);
+    }
+}
