@@ -1,12 +1,15 @@
 const navSlide = () => {
     const burger = document.querySelector('.menu_burger');
     const nav = document.querySelector('.nav_links');
+    // Need to fix "navExtend" when not in mobile view
+    const navExtend = document.querySelector('nav');
     const navLinks = document.querySelectorAll('.nav_links li');
 
     
     burger.addEventListener('click', () => {
         // Toggle Navigation Bar
-        nav.classList.toggle('nav_active');
+        nav.classList.toggle('nav_links_active');
+        navExtend.classList.toggle('nav_active');
 
         // Animation Links
         navLinks.forEach((link, index)=>{
@@ -22,6 +25,18 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
 
     });
+
+    // window.addEventListener('resize',() => {
+    //     if(window.innerWidth > 768)
+    //     {
+    //         nav.classList.remove('nav_links_active');
+    //         navExtend.classList.remove('nav_active');
+
+    //         burger.classList.remove('toggle');
+    //     } else {
+            
+    //     }
+    // });
 
 }
 

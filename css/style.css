@@ -10,14 +10,22 @@ nav{
     position: fixed;
     right: 0;
     left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 60px;
     background-color: rgba(0,0,0,0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+
+.nav_content{
+    margin: 0 auto;
+    max-width: 980px;
+    min-height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -35,7 +43,7 @@ nav{
 
 .nav_links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 40%;
 }
 
@@ -75,11 +83,10 @@ nav{
 @media screen and (max-width:768px){
     .nav_links{
         position: absolute;
+        justify-content: space-around;
         height: 300px;
         top: 60px;
-        background: rgba(0,0,0,0.8);
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        backdrop-filter: saturate(180%) blur(20px);
+        left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -92,15 +99,22 @@ nav{
     }
     .menu_burger{
         display: block;
+        margin: -5px;
     }
 }
 
-/* Navigation Links Fade Animation */
-.nav_active{
+/* Navigation Links Dropdown Animation */
+.nav_links_active{
     transform: translateY(0%);
-    transition: transform 0.4s ease-in;
+    transition: transform 0.3s ease-in;
 }
 
+.nav_active{
+    padding-bottom: 300px;
+    transition: padding 0.4s ease-in;
+}
+
+/* Navigation Links Fade Animation */
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -131,7 +145,7 @@ nav{
 /* Hero Image */
 .hero_image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/davids.jpeg");
-    height: 600px;
+    height: 550px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,18 +179,20 @@ nav{
 .gallery {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    z-index: -2;
   }
 
 .gallery_tile{
+    position: relative;
     text-decoration: none;
 }
 
 .tile_overlay{
     position: absolute;
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: hsl(0,0%,100%);
     opacity: 0;
+    width: 100%;
+    height: 100%;
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -184,9 +200,15 @@ nav{
     opacity: 1;
 }
 
+.tile_text{
+    position: absolute;
+    left: 14px;
+    bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
 
 .tile_title{
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .tile_sub_title{
@@ -226,4 +248,55 @@ width: 100%;
 .gallery {
     grid-template-columns: repeat(7,1fr);
     }
+}
+
+
+/* /////////////////////////// */
+
+
+/* Footer */
+footer{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.footer_content{
+    margin: 0 auto;
+    max-width: 980px;
+    min-height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_text{
+    color: hsl(0,0%,70%);
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.footer_links li{
+    list-style: none;
+}
+
+.footer_links a{
+    display: flex;
+    align-items: center;
+}
+
+.footer_content svg{
+    fill: hsl(0,0%,70%);
+    height: 24px;
+    transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.footer_content svg:hover{
+    fill: hsl(0,0%,100%);
 }
