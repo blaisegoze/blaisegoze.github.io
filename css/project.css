@@ -11,9 +11,8 @@
 }
 
 .project_text{
-    padding: 100px 20px 0 20px;
+    padding: 100px 20px 40px 20px;
     font-family: 'Roboto', sans-serif;
-    height: 300px;
 }
 
 .project_title{
@@ -30,6 +29,27 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+.software_used{
+    padding: 0px 20px 40px 20px;
+    margin: 0 auto;
+}
+
+.software_icons{
+
+}
+
+.software_icon{
+    width: 32px;
+    height: 32px;
+    filter: grayscale(100%) invert();
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.software_icon:hover{
+    filter: grayscale(0%);
+}
+
 
 .project_img {
     display: block;
