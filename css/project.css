@@ -5,20 +5,21 @@
 
 .project_content{
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
 }
 
 .project_text{
     padding: 100px 20px 40px 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 .project_title{
     color: hsl(0,0%,100%);
     text-align: center;
     font-size: 30px;
+    font-weight: 300;
     padding-bottom: 12px;
 }
 
@@ -31,12 +32,16 @@
 }
 
 .software_used{
-    padding: 0px 20px 40px 20px;
+    padding: 0px 20px 30px 20px;
     margin: 0 auto;
 }
 
 .software_icons{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 150px;
 }
 
 .software_icon{
@@ -50,6 +55,16 @@
     filter: grayscale(0%);
 }
 
+.software_icon_01{
+    width: 32px;
+    height: 32px;
+    filter: grayscale(100%);
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.software_icon_01:hover{
+    filter: grayscale(0%);
+}
 
 .project_img {
     display: block;
