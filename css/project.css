@@ -12,15 +12,13 @@
 }
 
 .project_info{
-    padding: 100px 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
     max-width: 400px;
-}
-
-.project_info_sticky{
+    height: 500px;
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 30vh;
+    top: 28vh;
 }
 
 .project_text{
@@ -51,12 +49,12 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 150px;
 }
 
 .software_icon{
     width: 32px;
     height: 32px;
+    margin: 0 12px;
     filter: grayscale(100%) invert();
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -68,6 +66,7 @@
 .software_icon_01{
     width: 32px;
     height: 32px;
+    margin: 0 12px;
     filter: grayscale(100%);
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -92,11 +91,10 @@
     }
 
     .project_info{
-        max-width: 800px;
-    }
-
-    .project_info_sticky{
+        padding: 100px 20px 30px 20px;
         position: unset;
+        max-width: 800px;
+        height: auto;
     }
 
     .project_imgs{
