@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 /* Navigation Bar */
@@ -14,7 +15,6 @@ nav{
     background-color: rgba(0,0,0,0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
     z-index: 1;
 }
 
@@ -143,9 +143,13 @@ nav{
 
 
 /* Hero Image */
-.hero_image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+.hero{
     height: 100vh;
+}
+
+.hero_image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    height: 140vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,7 +164,6 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 .hero_title{
@@ -175,8 +178,9 @@ nav{
 /* /////////////////////////// */
 
 
-/* Gallery */
+/* Portfolio */
 .gallery {
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
@@ -208,7 +212,6 @@ nav{
     position: absolute;
     left: 14px;
     bottom: 10px;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 .tile_title{
@@ -258,9 +261,24 @@ nav{
 /* /////////////////////////// */
 
 
-/* Portfolio */
+/* Resume */
+#resume{
+    background-color: hsl(0, 0%, 10%);
+    height: 100vh;
+}
 
+.resume_text{
+    text-align: center;
+    color: white;
+}
 
+.resume_title{
+    font-size: 30px;
+}
+
+.resume_sub_title{
+    font-size: 14px;
+}
 
 /* /////////////////////////// */
 
@@ -283,7 +301,6 @@ footer{
 .footer_text{
     color: hsl(0,0%,70%);
     font-size: 10px;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 .footer_links{
