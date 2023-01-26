@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
   <title>Blaise Gozé</title>
   <link rel="icon" type="image/x-icon" href="/icons/sig.svg">
 </head>
@@ -15,14 +16,14 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="nav_content">
-      <a class="logo" href="/index.html">
+      <a class="logo" href="#home">
         <svg viewBox="0 0 64 50.22"><g id="a"/><g id="b"><g id="c"><path class="d" d="M.33,49.34c11.14-3.61,21.25-10.34,29.73-18.35,5.96-5.87,12.53-12.94,12.71-21.63-.04-2.66-1.37-5.11-3.8-6.27-4.88-2.35-11.5-.45-14.94,3.69-1.97,2.48-3.65,6.42-1.87,9.39,4.1,5.25,17.06,2.74,22.46,.42,5.41-2.28,10.12-5.97,14.36-10.04,.25-.24,.65-.23,.88,.02,1.63,9.37-6.59,20.27-15.13,23.64l-.47-2.08c1.55-.17,3.42,.28,4.41,1.65,2.65,3.94,0,8.81-2.61,11.83-3.68,4.07-8.92,6.26-14.13,7.03-7.68,1.14-17.65-.11-21.61-7.76-3.03-5.97,.96-12.93,7.91-12.03,3.63,.47,6.5,2.55,8.89,5,9.45,9.95,14.44,17.74,29.59,12.71,2.35-.81,4.49-2.02,6.73-3.33,.18-.11,.42-.05,.53,.14,.1,.17,.06,.38-.1,.5-.98,.77-2.03,1.58-3.13,2.29-5.55,3.5-12.64,5.17-19.04,3.07-6.27-2.3-10.58-7.68-15.06-12.29-.62-.69-1.93-1.99-2.6-2.62-2.57-2.22-5.98-3.85-9.2-2.61-4.41,1.93-3.48,8.09-.26,10.76,7.44,6.62,23.25,4.8,29.75-2.43,1.57-1.74,2.82-3.88,3.11-6.07,.31-2.14-.62-3.94-2.96-3.69-.6,.06-1.14-.39-1.18-1-.03-.49,.27-.93,.71-1.09,2.07-.75,4.02-1.97,5.78-3.42,5.14-4.33,9.32-10.79,9.02-17.72,0,0,1.07,.39,1.03,.41-6.59,5.99-14.46,11.25-23.5,12.43-5.06,.58-11.59,1.46-15.27-2.93-2.32-3.47-.64-8.17,1.65-11.23C27.41-.43,38.83-2.75,43.62,4.51c3.93,7.43-1.34,15.71-5.94,21.43-7.73,9.2-17.71,16.42-28.64,21.32-2.74,1.21-5.56,2.26-8.49,2.94-.24,.06-.48-.09-.53-.33-.05-.23,.09-.47,.32-.53H.33Z"/></g></g></svg>
       </a>
       <ul class="nav_links">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/#resume">Résumé</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="menu_burger">
         <div class="line1"></div>
@@ -34,7 +35,7 @@
 
 
   <!-- Home -->
-  <div class="hero">
+  <div id="home" class="hero">
     <div class="hero_image rellax" data-rellax-speed="10">
     </div>
     <div class="hero_text">
@@ -44,128 +45,139 @@
   </div>
 
   <!-- Portfolio -->
-  <div id="portfolio" class="gallery">
+  <div id="portfolio">
+    <div class="portfolio_nav">
+      <ul class="portfolio_nav_links">
+        <li><a href="#">All</a></li>
+        <li><a href="#">2D</a></li>
+        <li><a href="#">3D</a></li>
+        <li><a href="#">Video</a></li>
+      </ul>
+    </div>
+    <div class="gallery">
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Pure</h1>
-          <p class="tile_sub_title">3D Animation</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Pure</h1>
+            <p class="tile_sub_title">3D Animation</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/pure.jpg" alt="Pure">
-    </a>
+        <img class="tile_img" src="img/pure.jpg" alt="Pure">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Variance</h1>
-          <p class="tile_sub_title">2D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Variance</h1>
+            <p class="tile_sub_title">2D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/variance.jpg" alt="Variance">
-    </a>
+        <img class="tile_img" src="img/variance.jpg" alt="Variance">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Overcome</h1>
-          <p class="tile_sub_title">3D Animation</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Overcome</h1>
+            <p class="tile_sub_title">3D Animation</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/overcome.jpg" alt="Overcome">
-    </a>
+        <img class="tile_img" src="img/overcome.jpg" alt="Overcome">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Davids</h1>
-          <p class="tile_sub_title">3D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Davids</h1>
+            <p class="tile_sub_title">3D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/davids.jpg" alt="Davids">
-    </a>
+        <img class="tile_img" src="img/davids.jpg" alt="Davids">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Nepenthe</h1>
-          <p class="tile_sub_title">2D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Nepenthe</h1>
+            <p class="tile_sub_title">2D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/nepenthe.jpg" alt="Nepenthe">
-    </a>
+        <img class="tile_img" src="img/nepenthe.jpg" alt="Nepenthe">
+      </a>
 
-    <a class="gallery_tile" href="/fantasy_tavern.html">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Fantasy Tavern</h1>
-          <p class="tile_sub_title">3D Render</p>
+      <a class="gallery_tile" href="/fantasy_tavern.html">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Fantasy Tavern</h1>
+            <p class="tile_sub_title">3D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/tavern.jpeg" alt="Fantasy Tavern">
-    </a>
+        <img class="tile_img" src="img/tavern.jpeg" alt="Fantasy Tavern">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Logos</h1>
-          <p class="tile_sub_title">2D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Logos</h1>
+            <p class="tile_sub_title">2D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/logos.jpeg" alt="Logos">
-    </a>
+        <img class="tile_img" src="img/logos.jpeg" alt="Logos">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Watermelon</h1>
-          <p class="tile_sub_title">3D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Watermelon</h1>
+            <p class="tile_sub_title">3D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/watermelon.jpeg" alt="Watermelon">
-    </a>
+        <img class="tile_img" src="img/watermelon.jpeg" alt="Watermelon">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Lollipop</h1>
-          <p class="tile_sub_title">3D Render</p>
+      <a class="gallery_tile" href="/lollipop.html">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Lollipop</h1>
+            <p class="tile_sub_title">3D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/lollipop.jpeg" alt="Lollipop">
-    </a>
+        <img class="tile_img" src="img/lollipop.jpeg" alt="Lollipop">
+      </a>
 
-    <a class="gallery_tile" href="/la_rosa.html">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">La Rosa</h1>
-          <p class="tile_sub_title">3D Render</p>
+      <a class="gallery_tile" href="/la_rosa.html">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">La Rosa</h1>
+            <p class="tile_sub_title">3D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/rose.jpeg" alt="La Rosa">
-    </a>
+        <img class="tile_img" src="img/rose.jpeg" alt="La Rosa">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Build a Pet</h1>
-          <p class="tile_sub_title">2D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Build a Pet</h1>
+            <p class="tile_sub_title">2D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/build_a_pet.jpg" alt="Build a Pet">
-    </a>
+        <img class="tile_img" src="img/build_a_pet.jpg" alt="Build a Pet">
+      </a>
 
-    <a class="gallery_tile" href="#">
-      <div class="tile_overlay">
-        <div class="tile_text">
-          <h1 class="tile_title">Free Yourself</h1>
-          <p class="tile_sub_title">2D Render</p>
+      <a class="gallery_tile" href="#">
+        <div class="tile_overlay">
+          <div class="tile_text">
+            <h1 class="tile_title">Free Yourself</h1>
+            <p class="tile_sub_title">2D Render</p>
+          </div>
         </div>
-      </div>
-      <img class="tile_img" src="img/free_yourself.jpg" alt="Free Yourself">
-    </a>
+        <img class="tile_img" src="img/free_yourself.jpg" alt="Free Yourself">
+      </a>
     
+    </div>
+
   </div>
 
 
