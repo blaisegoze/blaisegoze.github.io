@@ -6,6 +6,7 @@
 .project_content{
     margin: 0 auto;
     max-width: 1920px;
+    min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
 
@@ -13,7 +14,7 @@
 
 .project_info{
     padding: 30px 20px 30px 20px;
-    max-width: 400px;
+    width: 400px;
     height: 500px;
     display: flex;
     flex-direction: column;

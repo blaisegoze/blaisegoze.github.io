@@ -88,7 +88,7 @@ nav{
     .nav_links{
         position: absolute;
         justify-content: space-around;
-        height: 300px;
+        height: 45vh;
         top: 60px;
         left: 0;
         display: flex;
@@ -114,7 +114,7 @@ nav{
 }
 
 .nav_active{
-    padding-bottom: 350px;
+    padding-bottom: 100vh;
     transition: padding 0.4s ease-in;
 }
 
