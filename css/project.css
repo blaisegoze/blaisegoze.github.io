@@ -77,13 +77,48 @@
 }
 
 .project_imgs{
+    background-color: hsl(0, 0%, 0%);
     margin-top: 60px;
+    z-index: 0;
 }
 
 .project_img {
     display: block;
     width: 100%;
     max-height: 95.4vh;
+}
+
+/* Arrows for Navigation */
+.project_arrows{
+    position: sticky;
+    top: 50%;
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.project_arrows .cls-0 {
+    fill: none;
+    stroke: hsl(0,0%,70%);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 5px;
+}
+
+.project_arrows li{
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.project_arrow_left{
+
+}
+
+.project_arrow_right{
+
 }
 
 @media screen and (max-width:992px){
@@ -95,6 +130,7 @@
     .project_info{
         padding: 100px 20px 30px 20px;
         position: unset;
+        width: auto;
         max-width: 800px;
         height: auto;
     }
