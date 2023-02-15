@@ -5,7 +5,7 @@
 
 .hero_image {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
-    height: 160vh;
+    height: 170vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,14 +20,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 60vw;
 }
 
 .hero_title{
-    font-size: 30px;
+    font-size: 8vw;
+    line-height: 7vw;
+    text-transform: uppercase;
 }
 
 .hero_sub_title{
-    font-size: 14px;
+    font-size: 1.72vw;
+    letter-spacing: .227vw;
+    padding-left: .3vw;
+}
+
+@media screen and (max-width:768px){
+    .hero_text {
+        width: 80vw;
+    }
+
+    .hero_title{
+        font-size: 10vw;
+        line-height: 8.5vw;
+    }
+    
+    .hero_sub_title{
+        font-size: 2.27vw;
+        letter-spacing: 0.227vw;
+        padding-left: 0.3vw;
+    }
 }
 
 
@@ -152,7 +174,7 @@
 
 /* Resume */
 #resume{
-    background-color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 0%);
     height: 100vh;
     position: relative;
 }
@@ -177,6 +199,17 @@
 
 .resume_sub_title{
     font-size: 14px;
+}
+
+
+/* /////////////////////////// */
+
+
+/* About */
+#about{
+    background-color: hsl(0, 0%, 10%);
+    height: 100vh;
+    position: relative;
 }
 
 
