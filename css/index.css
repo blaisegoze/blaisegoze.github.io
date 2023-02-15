@@ -20,35 +20,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    width: 60vw;
+    width: 100%;
 }
 
 .hero_title{
-    font-size: 8vw;
-    line-height: 7vw;
+    font-size: 150px;
+    line-height: 122px;
     text-transform: uppercase;
 }
 
 .hero_sub_title{
-    font-size: 1.72vw;
-    letter-spacing: .227vw;
-    padding-left: .3vw;
+    font-size: 32px;
+    letter-spacing: 4.4px;
+    padding-left: 8px;
 }
 
-@media screen and (max-width:768px){
-    .hero_text {
-        width: 80vw;
-    }
-
+@media screen and (max-width:1000px){
     .hero_title{
-        font-size: 10vw;
-        line-height: 8.5vw;
+        font-size: 55px;
+        line-height: 46px;
     }
     
     .hero_sub_title{
-        font-size: 2.27vw;
-        letter-spacing: 0.227vw;
-        padding-left: 0.3vw;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        padding-left: 3px;
     }
 }
 
