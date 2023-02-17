@@ -1,6 +1,7 @@
 /* Hero Image */
 .hero{
     height: 100vh;
+    margin-bottom: -60px;
 }
 
 .hero_image {
@@ -54,11 +55,12 @@
 
 /* Portfolio */
 #portfolio{
-
+    padding-top: 60px;
 }
 
 .portfolio_nav{
     min-height: 60px;
+    background-color: hsl(0, 0%, 0%);
 }
 
 .portfolio_nav_links{
@@ -87,7 +89,7 @@
 }
 
 .gallery {
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
@@ -202,10 +204,62 @@
 
 
 /* About */
-#about{
+.about_background{
     background-color: hsl(0, 0%, 10%);
+}
+
+#about{
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+}
+
+.about_img{
+    background: url("../img/cutout.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+}
+
+.about_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+
+.about_title{
+    font-size: 30px;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,#3c6aa1 0%,#5c91ce 40%,#85a2c1 55%,#9baccb 60%);
+    color: transparent;
+}
+
+.about_sub_title{
+    font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+    #about{
+        flex-direction: column-reverse;
+    }
+
+    .about_img{
+        height: 60%;
+        width: 100%;
+    }
+    
+    .about_text{
+        height: 40%;
+        width: 100%;
+    }
 }
 
 

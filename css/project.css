@@ -14,7 +14,7 @@
 
 .project_info{
     padding: 30px 20px 30px 20px;
-    width: 400px;
+    max-width: 380px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@
         padding: 100px 20px 30px 20px;
         position: unset;
         width: auto;
-        max-width: 800px;
+        max-width: 600px;
         height: auto;
     }
 
