@@ -10,10 +10,24 @@
 /* /////////////////////////// */
 
 
-/* Container */
+/* Presets */
 .container{
     max-width: 980px;
     margin: 0 auto;
+}
+
+a{
+    color: hsl(0,0%,70%);
+    text-decoration: none;
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a:hover{
+    color: hsl(0,0%,100%);
+}
+
+.text_link{
+    color: hsl(0,0%,45%);
 }
 
 

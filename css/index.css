@@ -238,7 +238,7 @@
 .about_title{
     font-size: 30px;
     -webkit-background-clip: text;
-    background-image: linear-gradient(90deg,#3c6aa1 0%,#5c91ce 40%,#85a2c1 55%,#9baccb 60%);
+    background-image: linear-gradient(90deg,#3c6aa1 20%, #9baccb 60%);
     color: transparent;
 }
 
