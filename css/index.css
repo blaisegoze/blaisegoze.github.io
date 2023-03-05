@@ -77,15 +77,20 @@
     list-style: none;
 }
 
-.portfolio_nav_links a{
+.portfolio_nav_links .btn{
     color: hsl(0,0%,70%);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.portfolio_nav_links a:hover{
+.portfolio_nav_links .btn:hover{
     color: hsl(0,0%,100%);
+}
+
+.btn{
+    background: none;
+    border: 0;
 }
 
 .gallery {

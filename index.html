@@ -48,15 +48,15 @@
   <div id="portfolio">
     <div class="portfolio_nav">
       <ul class="portfolio_nav_links">
-        <li><a href="#">All</a></li>
-        <li><a href="#">2D</a></li>
-        <li><a href="#">3D</a></li>
-        <li><a href="#">Video</a></li>
+        <li><button class="btn active" onclick="filterAll()">All</button></li>
+        <li><button class="btn" onclick="filter2d()">2D</button></li>
+        <li><button class="btn" onclick="filter3d()">3D</button></li>
+        <li><button class="btn" onclick="filterVideo()">Video</button></li>
       </ul>
     </div>
     <div class="gallery">
 
-      <a class="gallery_tile" href="#">
+      <a class="gallery_tile filter_3d filter_video" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Pure</h1>
@@ -66,7 +66,7 @@
         <img class="tile_img" src="img/pure.jpg" alt="Pure">
       </a>
 
-      <a class="gallery_tile" href="#">
+      <a id="2d" class="gallery_tile filter_2d" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Variance</h1>
@@ -76,7 +76,7 @@
         <img class="tile_img" src="img/variance.jpg" alt="Variance">
       </a>
 
-      <a class="gallery_tile" href="/overcome.html">
+      <a class="gallery_tile filter_3d filter_video" href="/overcome.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Overcome</h1>
@@ -86,7 +86,7 @@
         <img class="tile_img" src="img/overcome.jpg" alt="Overcome">
       </a>
 
-      <a class="gallery_tile" href="#">
+      <a class="gallery_tile filter_3d" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Davids</h1>
@@ -96,7 +96,7 @@
         <img class="tile_img" src="img/davids.jpg" alt="Davids">
       </a>
 
-      <a class="gallery_tile" href="#">
+      <a class="gallery_tile filter_2d" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Nepenthe</h1>
@@ -106,7 +106,7 @@
         <img class="tile_img" src="img/nepenthe.jpg" alt="Nepenthe">
       </a>
 
-      <a class="gallery_tile" href="/fantasy_tavern.html">
+      <a class="gallery_tile filter_3d" href="/fantasy_tavern.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Fantasy Tavern</h1>
@@ -116,7 +116,7 @@
         <img class="tile_img" src="img/tavern.jpeg" alt="Fantasy Tavern">
       </a>
 
-      <a class="gallery_tile" href="#">
+      <a class="gallery_tile filter_2d" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Logos</h1>
@@ -126,7 +126,7 @@
         <img class="tile_img" src="img/logos.jpeg" alt="Logos">
       </a>
 
-      <a class="gallery_tile" href="/watermelon.html">
+      <a class="gallery_tile filter_3d filter_video" href="/watermelon.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Watermelon</h1>
@@ -136,7 +136,7 @@
         <img class="tile_img" src="img/watermelon.jpeg" alt="Watermelon">
       </a>
 
-      <a class="gallery_tile" href="/lollipop.html">
+      <a class="gallery_tile filter_3d" href="/lollipop.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Lollipop</h1>
@@ -146,7 +146,7 @@
         <img class="tile_img" src="img/lollipop.jpeg" alt="Lollipop">
       </a>
 
-      <a class="gallery_tile" href="/balloon.html">
+      <a class="gallery_tile filter_3d filter_video" href="/balloon.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Balloon</h1>
@@ -156,7 +156,7 @@
         <img class="tile_img" src="img/balloon.jpg" alt="Balloon">
       </a>
 
-      <a class="gallery_tile" href="/la_rosa.html">
+      <a class="gallery_tile filter_3d" href="/la_rosa.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">La Rosa</h1>
@@ -166,7 +166,7 @@
         <img class="tile_img" src="img/rose.jpeg" alt="La Rosa">
       </a>
 
-      <a class="gallery_tile" href="/build_a_pet.html">
+      <a class="gallery_tile filter_2d" href="/build_a_pet.html">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Build-A-Pet</h1>
@@ -176,7 +176,7 @@
         <img class="tile_img" src="img/build_a_pet.jpg" alt="Build a Pet">
       </a>
 
-      <a class="gallery_tile" href="#">
+      <a class="gallery_tile filter_2d" href="#">
         <div class="tile_overlay">
           <div class="tile_text">
             <h1 class="tile_title">Free Yourself</h1>

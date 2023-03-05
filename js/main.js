@@ -77,5 +77,88 @@ const navScroll = () => {
 }
 
 
+////// Nav Portfolio //////
+
+function filterAll() {
+    var filt2d = document.querySelectorAll(".filter_2d");
+    var filt3d = document.querySelectorAll(".filter_3d");
+    var filtVideo = document.querySelectorAll(".filter_video");
+        for(var i=0; i<filt2d.length; i++)
+        {
+            filt2d[i].style.display = "block";
+        }
+        for(var i=0; i<filt3d.length; i++)
+        {
+            filt3d[i].style.display = "block";
+        }
+        for(var i=0; i<filtVideo.length; i++)
+        {
+            filtVideo[i].style.display = "block";
+        }
+}
+
+function filter2d() {
+    var filt3d = document.querySelectorAll(".filter_3d");
+    var filt2d = document.querySelectorAll(".filter_2d");
+    var filtVideo = document.querySelectorAll(".filter_video");
+        for(var i=0; i<filt3d.length; i++)
+        {
+            filt3d[i].style.display = "none";
+        }
+        for(var i=0; i<filt2d.length; i++)
+        {
+            filt2d[i].style.display = "block";
+        }
+        for(var i=0; i<filtVideo.length; i++)
+        {
+            filtVideo[i].style.display = "none";
+        }
+}
+
+function filter3d() {
+    var filt2d = document.querySelectorAll(".filter_2d");
+    var filt3d = document.querySelectorAll(".filter_3d");
+    var filtVideo = document.querySelectorAll(".filter_video");
+        for(var i=0; i<filt2d.length; i++)
+        {
+            filt2d[i].style.display = "none";
+        }
+        for(var i=0; i<filt3d.length; i++)
+        {
+            filt3d[i].style.display = "block";
+        }
+        for(var i=0; i<filtVideo.length; i++)
+        {
+            filtVideo[i].style.display = "block";
+        }
+}
+
+function filterVideo() {
+    var filt2d = document.querySelectorAll(".filter_2d");
+    var filt3d = document.querySelectorAll(".filter_3d");
+    var filtVideo = document.querySelectorAll(".filter_video");
+        for(var i=0; i<filt2d.length; i++)
+        {
+            filt2d[i].style.display = "none";
+        }
+        for(var i=0; i<filt3d.length; i++)
+        {
+            filt3d[i].style.display = "none";
+        }
+        for(var i=0; i<filtVideo.length; i++)
+        {
+            filtVideo[i].style.display = "block";
+        }
+}
+
+
+//    var x = document.getElementById("2d");
+//    if (x.style.display === "none") {
+//      x.style.display = "block";
+//    } else {
+//      x.style.display = "none";
+//    }
+
+
 navSlide();
 navScroll();
