@@ -63,7 +63,7 @@
     background-color: hsl(0, 0%, 0%);
 }
 
-.portfolio_nav_links{
+.portfolio_nav_btns{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,24 +73,29 @@
     padding: 0 20px;
 }
 
-.portfolio_nav_links li{
+.portfolio_nav_btns li{
     list-style: none;
 }
 
-.portfolio_nav_links .btn{
+.portfolio_nav_btns .btn{
     color: hsl(0,0%,70%);
     text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.portfolio_nav_links .btn:hover{
+.portfolio_nav_btns .btn:hover{
     color: hsl(0,0%,100%);
 }
 
 .btn{
     background: none;
     border: 0;
+}
+
+.btn.active{
+    color: hsl(0,0%,100%);
 }
 
 .gallery {
@@ -102,6 +107,26 @@
 .gallery_tile{
     position: relative;
     text-decoration: none;
+}
+
+.gallery_tile.hide{
+    display: none;
+}
+
+.gallery_tile.show{
+    display: block;
+    animation: tileAppear 0.4s ease;
+}
+
+@keyframes tileAppear{
+    0%{
+        opacity: 0%;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
 }
 
 .tile_overlay{
