@@ -290,6 +290,7 @@
 @media screen and (max-width:768px){
     #about{
         flex-direction: column-reverse;
+        min-height: 1120px;
     }
 
     .about_img{
@@ -300,6 +301,7 @@
     .about_text{
         height: 40%;
         width: 100%;
+        align-items: flex-end;
     }
 }
 
