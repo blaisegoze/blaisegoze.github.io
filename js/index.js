@@ -49,7 +49,7 @@ const navPortfolio = () => {
                     let filterTiles = gallery_tile.getAttribute("data-name"); //get image data-name value
                     //if user clicked tile data-name value is equal to image data-name value
                     //or user clicked tile data-name value is equal to "all"
-                    if((filterTiles == filterName) || filterName == "all"){
+                    if((filterTiles.includes(filterName)) || filterName == "all"){
                         gallery_tile.classList.remove("hide");
                         gallery_tile.classList.add("show");
                     }else{
@@ -63,5 +63,19 @@ const navPortfolio = () => {
 }
 
 
+////// Website Alert //////
+
+const websiteAlert = () => {
+    // Website under development alert
+    var alerted = localStorage.getItem('alerted') || '';
+    if (alerted != 'yes') {
+    alert("Website is under development! Some features may not be complete.");
+    localStorage.setItem('alerted','yes');
+    }
+    //localStorage.clear();
+}
+
+
 navScroll();
 navPortfolio();
+websiteAlert();

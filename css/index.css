@@ -223,6 +223,9 @@
 
 .resume_title{
     font-size: 30px;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
+    color: transparent;
 }
 
 .resume_sub_title{
@@ -263,6 +266,7 @@
     text-align: center;
     color: white;
     width: 50%;
+    padding: 0 40px 0 40px;
 }
 
 .about_title{
@@ -274,6 +278,13 @@
 
 .about_sub_title{
     font-size: 14px;
+}
+
+.about_body{
+    margin: 20px 0 0 0;
+    text-align: left;
+    font-size: 15px;
+    line-height: 2;
 }
 
 @media screen and (max-width:768px){
@@ -332,12 +343,16 @@
 .contact_title{
     font-size: 30px;
     -webkit-background-clip: text;
-    background-image: linear-gradient(90deg,#3c6aa1 20%, #9baccb 60%);
+    background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
     color: transparent;
 }
 
 .contact_sub_title{
     font-size: 14px;
+}
+
+.contact_body{
+    margin: 20px 0 0 0;
 }
 
 @media screen and (max-width:768px){
