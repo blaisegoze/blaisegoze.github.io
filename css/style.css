@@ -1,3 +1,18 @@
+/* Fonts */
+@font-face {
+    font-family: ArcaMajora3-Bold;
+    src: url("../fonts/ArcaMajora3-Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: ArcaMajora3-Heavy;
+    src: url("../fonts/ArcaMajora3-Heavy.otf") format('opentype');
+}
+
+
+/* /////////////////////////// */
+
+
 /* Reset Styles */
 *{
     margin: 0;
@@ -58,14 +73,11 @@ nav{
 
 .logo{
     width: 50px;
-}
-
-.logo svg{
     fill: hsl(0,0%,70%);
     transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.logo svg:hover{
+.logo:hover{
     fill: hsl(0,0%,100%);
 }
 
@@ -88,6 +100,11 @@ nav{
 
 .nav_links a:hover{
     color: hsl(0,0%,100%);
+}
+
+.nav_content a.active{
+    color: hsl(0,0%,100%);
+    fill: hsl(0,0%,100%);
 }
 
 /* Menu Burger */
@@ -113,7 +130,7 @@ nav{
         position: absolute;
         justify-content: space-around;
         height: 45vh;
-        top: 60px;
+        top: 12%;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -172,7 +189,7 @@ nav{
 
 /* Footer */
 footer{
-    background-color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 0%);
 }
 
 .footer_content{

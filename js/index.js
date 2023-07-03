@@ -1,4 +1,4 @@
-////// Smooth Scroll for Clicking on Links //////
+////// Nav Smooth Scroll //////
 
 const navScroll = () => {
     // Define selector for selecting
@@ -29,6 +29,32 @@ const navScroll = () => {
             });
         }
     });
+}
+
+
+////// Nav Scroll Highlight //////
+
+const navScrollHighlight = () => {
+    const section = document.querySelectorAll('section');
+    const navLi = document.querySelectorAll('nav .nav_content a');
+
+    window.addEventListener('scroll', ()=> {
+        let current = '';
+        section.forEach( section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if(scrollY >= (sectionTop - sectionHeight/3)){
+                current = section.getAttribute('id');
+            }
+        })
+
+        navLi.forEach( a => {
+            a.classList.remove('active');
+            if(a.classList.contains(current)){
+                a.classList.add('active');
+            }
+        })
+    })
 }
 
 
@@ -77,5 +103,6 @@ const websiteAlert = () => {
 
 
 navScroll();
+navScrollHighlight();
 navPortfolio();
 websiteAlert();
