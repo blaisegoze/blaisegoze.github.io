@@ -49,6 +49,15 @@
     }
 }
 
+.hero_content{
+    justify-content: flex-end;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 100%;
+}
+
 
 /* /////////////////////////// */
 
@@ -60,7 +69,10 @@
 
 .portfolio_nav{
     min-height: 60px;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsla(0, 0%, 0%, 80%);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
 }
 
 .portfolio_nav_btns{
@@ -208,7 +220,14 @@
 }
 
 .resume_img{
-
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
+    opacity: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .resume_text{
@@ -381,12 +400,9 @@
 }
 
 .contact_img{
-    background: url("../img/cutout.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 50%;
     height: 70%;
+    object-fit: contain;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
