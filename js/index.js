@@ -93,12 +93,12 @@ const navPortfolio = () => {
 
 const websiteAlert = () => {
     // Website under development alert
-    var alerted = localStorage.getItem('alerted') || '';
+    var alerted = sessionStorage.getItem('alerted') || '';
     if (alerted != 'yes') {
     alert("Website is under development! Some features may not be complete.");
-    localStorage.setItem('alerted','yes');
+    sessionStorage.setItem('alerted','yes');
     }
-    //localStorage.clear();
+    //sessionStorage.clear();
 }
 
 
