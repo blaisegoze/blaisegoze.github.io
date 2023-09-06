@@ -31,6 +31,7 @@
     margin: 0 auto;
 }
 
+/* a Tags */
 a{
     color: hsl(0,0%,70%);
     text-decoration: none;
@@ -43,6 +44,24 @@ a:hover{
 
 .text_link{
     color: hsl(0,0%,45%);
+}
+
+/* Reveal Animation */
+.conceal{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media(prefers-reduced-motion) {
+    .conceal {
+        transition: none;
+    }
 }
 
 
