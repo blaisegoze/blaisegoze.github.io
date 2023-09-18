@@ -102,6 +102,9 @@
     position: sticky;
     top: 50%;
     height: 0;
+    padding-right: 380px;
+    margin: 0 auto;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -109,7 +112,6 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 5px;
-    margin-right: 380px;
 }
 
 .project_arrows li{
@@ -147,7 +149,7 @@
     }
 
     .project_imgs{
-        margin-top: 0px;
+        padding-right: 0px;
     }
 
 }
