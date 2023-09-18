@@ -95,10 +95,17 @@ const websiteAlert = () => {
     // Website under development alert
     var alerted = sessionStorage.getItem('alerted') || '';
     if (alerted != 'yes') {
-    alert("Website is under development! Some features may not be complete.");
-    sessionStorage.setItem('alerted','yes');
+        alert("Website is under development! Some features may not be complete.");
+        sessionStorage.setItem('alerted','yes');
     }
     //sessionStorage.clear();
+}
+
+
+////// Portfolio Page Order //////
+
+onclick = ()=>{
+    sessionStorage.setItem('mediaType', document.querySelector('.btn.active').dataset.name);
 }
 
 

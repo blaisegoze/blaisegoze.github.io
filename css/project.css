@@ -105,14 +105,11 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
-}
-
-.project_arrows .cls-0 {
     fill: none;
-    stroke: hsl(0,0%,70%);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 5px;
+    margin-right: 380px;
 }
 
 .project_arrows li{
@@ -122,18 +119,23 @@
     margin: 0 10px;
 }
 
-.project_arrow_left{
-
+.project_arrow_left, .project_arrow_right{
+    stroke: hsla(0,0%,60%,40%);
+    transition: stroke 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.project_arrow_right{
-
+.project_arrow_left:hover, .project_arrow_right:hover{
+    stroke: hsla(0,0%,100%,100%);
 }
 
 @media screen and (max-width:992px){
     .project_content{
         flex-direction: column;
         align-items: center;
+    }
+
+    .project_arrows{
+        margin-right: 0px;
     }
 
     .project_info{

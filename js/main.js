@@ -58,17 +58,6 @@ const navSlide = () => {
 }
 
 
-////// Nav Portfolio Order //////
-
-const portfolioOrder = () => {
-    sessionStorage.setItem('filter', '3d')
-    sessionStorage.setItem('portfolioOrder', JSON.stringify([{url: '/fantasy_tavern', type: '3d'}, {url: '/pure', type: '2d'}]))
-    if (sessionStorage.getItem('filter') == '3d'){
-
-    }
-}
-
-
 ////// Reveal Animation //////
 
 const revealAnimation = () => {
@@ -89,5 +78,4 @@ const revealAnimation = () => {
 
 
 navSlide();
-portfolioOrder();
 revealAnimation();
