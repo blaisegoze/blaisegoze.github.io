@@ -112,4 +112,4 @@ onclick = ()=>{
 navScroll();
 navScrollHighlight();
 navPortfolio();
-websiteAlert();
+//websiteAlert();

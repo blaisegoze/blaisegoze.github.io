@@ -15,7 +15,7 @@ const portfolioPageOrder = () => {
 
     const pagesAll = [{page: '/pure', type: '3d video'}, {page: '/variance', type: '2d'}, {page: '/overcome', type: '3d video'}, {page: '/davids', type: '3d'}, {page: '/nepenthe', type: '2d'}, {page: '/fantasy_tavern', type: '3d'}, {page: '/mutant_opie', type: '2d'}, {page: '/watermelon', type: '3d video'}, {page: '/logos', type: '2d'}, {page: '/lollipop', type: '3d'}, {page: '/balloon', type: '3d video'}, {page: '/la_rosa', type: '3d'}, {page: '/build_a_pet', type: '2d'}, {page: '/free_yourself', type: '2d'}, {page: '/turndown_cookie', type: 'video'}, {page: '/weddings', type: 'video'}];
 
-    if (sessionStorage.getItem('mediaType') == 'all'){
+    if (sessionStorage.getItem('mediaType') == 'all' || sessionStorage.getItem('mediaType') == null){
         var filteredPagesArray = pagesAll;
     } else {
         var filteredPagesArray = pagesAll.filter(page => page.type.includes(sessionStorage.getItem('mediaType')));
