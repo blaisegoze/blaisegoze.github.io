@@ -63,7 +63,6 @@ const navSlide = () => {
 const revealAnimation = () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            console.log(entry)
             if (entry.isIntersecting) {
                 entry.target.classList.add('reveal');
             } // else {
