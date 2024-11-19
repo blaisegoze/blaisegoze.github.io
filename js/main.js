@@ -76,5 +76,10 @@ const revealAnimation = () => {
 }
 
 
+////// Footer //////
+
+document.getElementById("copyright_date").innerHTML = "Copyright © 2024, Blaise Gozé";
+
+
 navSlide();
 revealAnimation();
