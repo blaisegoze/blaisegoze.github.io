@@ -1,6 +1,19 @@
 /* Project */
+.background_project{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(80px) opacity(0.3);
+    -webkit-filter: blur(80px) opacity(0.3);
+    object-fit: cover;
+}
+
 .project{
-    background-color: hsl(0, 0%, 8%);
+
 }
 
 .project_content{
@@ -12,14 +25,27 @@
 
 }
 
-.project_info{
+.project_border_info {
     padding: 30px 20px 30px 20px;
-    max-width: 380px;
+    min-width: 440px;
+    max-width: 440px;
     height: 500px;
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 28vh;
+}
+
+.project_info{
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 100%, 8%);
+    border-radius: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: hsla(0, 0%, 100%, 5%);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
 }
 
 .project_text{
@@ -77,10 +103,11 @@
 }
 
 .project_imgs{
-    background-color: hsl(0, 0%, 0%);
     margin-top: 60px;
     z-index: 0;
     width: 100%;
+    box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
+    background: hsla(0, 0%, 0%, 40%);
 }
 
 .project_img {
@@ -102,7 +129,7 @@
     position: sticky;
     top: 50%;
     height: 0;
-    padding-right: 380px;
+    padding-right: 440px;
     margin: 0 auto;
     max-width: 1920px;
     display: flex;
@@ -140,9 +167,10 @@
         padding-right: 0px;
     }
 
-    .project_info{
-        padding: 100px 20px 30px 20px;
+    .project_border_info{
+        padding: 90px 20px 30px 20px;
         position: unset;
+        min-width: auto;
         width: auto;
         max-width: 600px;
         height: auto;
@@ -150,6 +178,7 @@
 
     .project_imgs{
         margin-right: 0px;
+        margin-top: 0px;
     }
 
 }
