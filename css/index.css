@@ -110,11 +110,13 @@
     background-color: hsl(0, 0%, 0%);
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding: 2px;
   }
 
 .gallery_tile{
     position: relative;
     text-decoration: none;
+    margin: 2px;
 }
 
 .gallery_tile.hide{
@@ -151,10 +153,6 @@
     opacity: 1;
 }
 
-.gallery_tile:hover .tile_img{
-
-}
-
 .tile_text{
     position: absolute;
     left: 14px;
@@ -171,7 +169,99 @@
   
 .tile_img {
     display: block;
+    background-size: cover;
+    aspect-ratio: 1/1;
     width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.tile_img_pure{
+    background-image: url(/img/pure.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_pure{
+    background-image: url(/img/gifs/pure.gif);
+}
+
+.tile_img_variance{
+    background-image: url(/img/variance.jpg);
+}
+
+.tile_img_overcome{
+    background-image: url(/img/overcome.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_overcome{
+    background-image: url(/img/gifs/overcome.gif);
+}
+
+.tile_img_davids{
+    background-image: url(/img/davids.jpg);
+}
+
+.tile_img_nepenthe{
+    background-image: url(/img/nepenthe.jpg);
+}
+
+.tile_img_fantasy_tavern{
+    background-image: url(/img/fantasy_tavern.jpeg);
+}
+
+.tile_img_mutant_opie{
+    background-image: url(/img/mutant_opie.jpg);
+}
+
+.tile_img_watermelon{
+    background-image: url(/img/watermelon.jpeg);
+}
+
+.tile_overlay:hover ~ .tile_img_watermelon{
+    background-image: url(/img/gifs/watermelon.gif);
+}
+
+.tile_img_logos{
+    background-image: url(/img/logos.jpeg);
+}
+
+.tile_img_lollipop{
+    background-image: url(/img/lollipop.jpeg);
+}
+
+.tile_img_balloon{
+    background-image: url(/img/balloon.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_balloon{
+    background-image: url(/img/gifs/balloon.gif);
+}
+
+.tile_img_la_rosa{
+    background-image: url(/img/la_rosa.jpeg);
+}
+
+.tile_img_build_a_pet{
+    background-image: url(/img/build_a_pet.jpg);
+}
+
+.tile_img_free_yourself{
+    background-image: url(/img/free_yourself.jpg);
+}
+
+.tile_img_turndown_cookie{
+    background-image: url(/img/turndown_cookie.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_turndown_cookie{
+    background-image: url(/img/gifs/turndown_cookie.gif);
+}
+
+.tile_img_weddings{
+    background-image: url(/img/weddings.jpeg);
+}
+
+.tile_overlay:hover ~ .tile_img_weddings{
+    background-image: url(/img/gifs/weddings.gif);
 }
 
 @media (min-width: 640px) {
@@ -241,7 +331,8 @@
 }
 
 .resume_title{
-    font-size: 30px;
+    font-size: 80px;
+    line-height: 75px;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
     color: transparent;
@@ -423,7 +514,8 @@
 }
 
 .contact_title{
-    font-size: 30px;
+    font-size: 80px;
+    line-height: 75px;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
     color: transparent;
