@@ -1,6 +1,6 @@
 /* Hero Image */
 .hero{
-    height: 100dvh;
+    height: 100svh;
     margin-bottom: -60px;
 }
 
@@ -301,7 +301,7 @@
 /* Resume */
 #resume{
     background-color: hsl(0, 0%, 0%);
-    height: 100dvh;
+    height: 100svh;
     position: relative;
 }
 
@@ -352,7 +352,7 @@
 }
 
 #about{
-    height: 100dvh;
+    height: 100svh;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -482,7 +482,7 @@
 }
 
 #contact{
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
     position: relative;
     display: flex;
