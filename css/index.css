@@ -4,6 +4,12 @@
     margin-bottom: -60px;
 }
 
+@media (pointer:coarse) {
+    .hero{
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+
 .hero_image {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
     height: 170vh;
