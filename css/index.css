@@ -1,3 +1,14 @@
+/* Preload Content */
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:
+        url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
+ }
+
+
+ /* /////////////////////////// */
+
+
 /* Hero Image */
 .hero{
     height: 100svh;
