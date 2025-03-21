@@ -116,7 +116,15 @@
 .gallery_tile{
     position: relative;
     text-decoration: none;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
     margin: 2px;
+    border-radius: 6px;
+    transition: 0.3s cubic-bezier(0.42, 0, 0, 1);
+}
+
+.gallery_tile:hover, .gallery_tile:focus {
+    scale: 95%;
 }
 
 .gallery_tile.hide{
@@ -146,10 +154,12 @@
     opacity: 0;
     width: 100%;
     height: 100%;
+    scale: 110%;
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.gallery_tile:hover .tile_overlay{
+.gallery_tile:hover .tile_overlay, .gallery_tile:focus .tile_overlay{
+    scale: 100%;
     opacity: 1;
 }
 
@@ -160,28 +170,21 @@
 }
 
 .tile_title{
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .tile_sub_title{
-    font-size: 14px;
+    font-size: 15px;
 }
   
 .tile_img {
     display: block;
     background-size: cover;
-    aspect-ratio: 1/1;
+    background-attachment: fixed;
+    background-position: 50% 50%;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
 }
-
-/* Preload Gifs */
-body::after{
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:
-        url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
- }
 
 .tile_img_pure{
     background-image: url(/img/pure.jpg);
@@ -270,6 +273,13 @@ body::after{
 .tile_overlay:hover ~ .tile_img_weddings{
     background-image: url(/img/gifs/weddings.gif);
 }
+
+/* Preload Gifs */
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:
+        url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
+ }
 
 @media (min-width: 640px) {
 .gallery {
