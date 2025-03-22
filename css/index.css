@@ -120,11 +120,13 @@
     aspect-ratio: 1 / 1;
     margin: 2px;
     border-radius: 6px;
-    transition: 0.3s cubic-bezier(0.42, 0, 0, 1);
+    scale: 100%;
+    transition: 1s cubic-bezier(0.25, 0.1, 0.25, 1), scale 0.5s cubic-bezier(0.42, 0, 0, 1);
 }
 
 .gallery_tile:hover, .gallery_tile:focus {
     scale: 95%;
+    transition: scale 0.3s cubic-bezier(0.42, 0, 0, 1);
 }
 
 .gallery_tile.hide{
