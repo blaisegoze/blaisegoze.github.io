@@ -331,6 +331,7 @@ body::after{
 
 .resume_circle{
     aspect-ratio: auto 1/1;
+    max-height: 74%;
     width: 74%;
     background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #462c27 99%, transparent 99%);
     position: absolute;
@@ -411,6 +412,7 @@ body::after{
 
 .about_circle{
     aspect-ratio: auto 1/1;
+    max-height: 74%;
     width: 74%;
     background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #1F2E3C 99%, transparent 99%);
     position: absolute;
@@ -543,6 +545,7 @@ body::after{
 
 .contact_circle{
     aspect-ratio: auto 1/1;
+    max-height: 74%;
     width: 74%;
     background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #462c27 99%, transparent 99%);
     position: absolute;
