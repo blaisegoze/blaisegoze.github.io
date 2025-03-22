@@ -325,7 +325,7 @@ body::after{
 
 #resume{
     background-color: hsl(0, 0%, 0%);
-    height: 80svh;
+    height: 100svh;
     position: relative;
 }
 
@@ -400,7 +400,7 @@ body::after{
 }
 
 #about{
-    height: 80svh;
+    height: 100svh;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -533,9 +533,8 @@ body::after{
 }
 
 #contact{
-    height: 80svh;
+    height: 100svh;
     width: 100%;
-    margin-bottom: 10svh;
     position: relative;
     display: flex;
     justify-content: center;
