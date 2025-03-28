@@ -42,9 +42,7 @@
     flex-direction: column;
     background-color: hsla(0, 0%, 100%, 8%);
     border-radius: 16px;
-    border: 1px;
-    border-style: solid;
-    border-color: hsla(0, 0%, 100%, 5%);
+    border: 1px solid hsla(0, 0%, 100%, 5%);
     box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
 }
 
@@ -148,13 +146,15 @@
     margin: 0 10px;
 }
 
-.project_arrow_left, .project_arrow_right{
+.project_arrow_left svg, .project_arrow_right svg{
     stroke: hsla(0,0%,60%,40%);
     transition: stroke 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.project_arrow_left:hover, .project_arrow_right:hover{
+.project_arrow_left:hover svg, .project_arrow_right:hover svg, .project_arrow_left:focus svg, .project_arrow_right:focus svg, .arrow_right_link:focus svg, .arrow_left_link:focus svg{
+    fill: none;
     stroke: hsla(0,0%,100%,100%);
+    transition: stroke 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 @media screen and (max-width:992px){

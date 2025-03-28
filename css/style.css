@@ -39,11 +39,6 @@ img {
     -ms-user-select: none;
 }
 
-.container{
-    max-width: 980px;
-    margin: 0 auto;
-}
-
 /* a Tags */
 a{
     color: hsl(0,0%,70%);
@@ -51,12 +46,59 @@ a{
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-a:hover{
+a:hover, a:focus{
     color: hsl(0,0%,100%);
 }
 
 .text_link{
     color: hsl(0,0%,45%);
+}
+
+/* SVGs */
+a:hover svg, a:focus svg{
+    fill: hsl(0,0%,100%);
+    transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Buttons */
+.btn_clear{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: hsla(0, 0%, 100%, 10%);
+    border: 1px solid hsla(0, 0%, 100%, 5%);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.9px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn_clear:hover, .btn_clear:focus{
+    background-color: hsla(0, 0%, 0%, 0.08);
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.btn_brown{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: hsl(10, 40%, 59%, 20%);
+    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.9px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn_brown:hover, .btn_brown:focus{
+    background-color: hsl(10, 40%, 59%, 50%);
+    border: 1px solid hsla(13, 63%, 80%, 0.6);
+}
+
+/* Containers */
+.container{
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 /* Reveal Animation */
@@ -131,7 +173,7 @@ nav{
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.nav_links a:hover{
+.nav_links a:hover, .nav_links a:focus{
     color: hsl(0,0%,100%);
 }
 

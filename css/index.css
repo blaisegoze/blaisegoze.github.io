@@ -105,7 +105,7 @@
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.portfolio_nav_btns .btn:hover{
+.portfolio_nav_btns .btn:hover, .portfolio_nav_btns .btn:focus{
     color: hsl(0,0%,100%);
 }
 
@@ -330,13 +330,72 @@ body::after{
 /* /////////////////////////// */
 
 
+/* Clients */
+.clients_background{
+    background-color: hsl(0, 0%, 0%);
+}
+
+#clients{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+.clients_content{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.clients_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.clients_links li{
+    list-style: none;
+}
+
+.clients_links a{
+    display: flex;
+    align-items: center;
+}
+
+.clients_content svg{
+    fill: hsl(0,0%,70%);
+    height: 35px;
+    transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.clients_content svg:hover{
+    fill: hsl(0,0%,100%);
+}
+
+@media screen and (max-width:980px){
+    .clients_links{
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .clients_content svg{
+        height: 40px;
+    }
+}
+
+
+/* /////////////////////////// */
+
+
 /* Resume */
 .resume_background{
     background-color: hsl(0, 0%, 0%);
 }
 
 #resume{
-    background-color: hsl(0, 0%, 0%);
     height: 100svh;
     position: relative;
 }
@@ -382,7 +441,6 @@ body::after{
 
 .resume_title{
     font-size: 80px;
-    line-height: 75px;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
     color: transparent;
@@ -592,7 +650,6 @@ body::after{
 
 .contact_title{
     font-size: 80px;
-    line-height: 75px;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg,#c17c6e 20%, #ecbbae 60%);
     color: transparent;
