@@ -201,11 +201,27 @@
     height: 100%;
 }
 
+.tile_img_px200r{
+    background-image: url(/img/px200r.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_px200r, a:focus .tile_img_px200r{
+    background-image: url(/img/gifs/px200r.gif);
+}
+
+.tile_img_infinity_air{
+    background-image: url(/img/infinity_air.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_infinity_air, a:focus .tile_img_infinity_air{
+    background-image: url(/img/gifs/infinity_air.gif);
+}
+
 .tile_img_pure{
     background-image: url(/img/pure.jpg);
 }
 
-.tile_overlay:hover ~ .tile_img_pure{
+.tile_overlay:hover ~ .tile_img_pure, a:focus .tile_img_pure{
     background-image: url(/img/gifs/pure.gif);
 }
 
@@ -217,7 +233,7 @@
     background-image: url(/img/overcome.jpg);
 }
 
-.tile_overlay:hover ~ .tile_img_overcome{
+.tile_overlay:hover ~ .tile_img_overcome, a:focus .tile_img_overcome{
     background-image: url(/img/gifs/overcome.gif);
 }
 
@@ -241,7 +257,7 @@
     background-image: url(/img/watermelon.jpeg);
 }
 
-.tile_overlay:hover ~ .tile_img_watermelon{
+.tile_overlay:hover ~ .tile_img_watermelon, a:focus .tile_img_watermelon{
     background-image: url(/img/gifs/watermelon.gif);
 }
 
@@ -257,7 +273,7 @@
     background-image: url(/img/balloon.jpg);
 }
 
-.tile_overlay:hover ~ .tile_img_balloon{
+.tile_overlay:hover ~ .tile_img_balloon, a:focus .tile_img_balloon{
     background-image: url(/img/gifs/balloon.gif);
 }
 
@@ -277,7 +293,7 @@
     background-image: url(/img/turndown_cookie.jpg);
 }
 
-.tile_overlay:hover ~ .tile_img_turndown_cookie{
+.tile_overlay:hover ~ .tile_img_turndown_cookie, a:focus .tile_img_turndown_cookie{
     background-image: url(/img/gifs/turndown_cookie.gif);
 }
 
@@ -285,7 +301,7 @@
     background-image: url(/img/weddings.jpeg);
 }
 
-.tile_overlay:hover ~ .tile_img_weddings{
+.tile_overlay:hover ~ .tile_img_weddings, a:focus .tile_img_weddings{
     background-image: url(/img/gifs/weddings.gif);
 }
 
