@@ -201,6 +201,14 @@
     height: 100%;
 }
 
+.tile_img_cush-tech{
+    background-image: url(/img/cush-tech.jpg);
+}
+
+.tile_overlay:hover ~ .tile_img_cush-tech, a:focus .tile_img_cush-tech{
+    background-image: url(/img/gifs/cush-tech.gif);
+}
+
 .tile_img_px200r{
     background-image: url(/img/px200r.jpg);
 }
@@ -309,7 +317,7 @@
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:
-        url(/img/gifs/px200r.gif) url(/img/gifs/infinity_air.gif) url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
+        url(/img/gifs/cush-tech.gif) url(/img/gifs/px200r.gif) url(/img/gifs/infinity_air.gif) url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
  }
 
 @media (min-width: 640px) {
