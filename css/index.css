@@ -202,130 +202,130 @@
 }
 
 .tile_img_cush-tech{
-    background-image: url(/img/thumbnails/cush-tech.jpg);
+    background-image: url(/assets/thumbnails/cush-tech.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_cush-tech, a:focus .tile_img_cush-tech{
-    background-image: url(/img/gifs/cush-tech.gif);
+    background-image: url(/assets/gifs/cush-tech.webp);
 }
 
 .tile_img_hex_x_talon{
-    background-image: url(/img/thumbnails/hex_x_talon.webp);
+    background-image: url(/assets/thumbnails/hex_x_talon.webp);
 }
 
 .tile_overlay:hover ~ .tile_img_hex_x_talon, a:focus .tile_img_hex_x_talon{
-    background-image: url(/img/gifs/hex_x_talon.gif);
+    background-image: url(/assets/gifs/hex_x_talon.webp);
 }
 
 .tile_img_px200r{
-    background-image: url(/img/thumbnails/px200r.jpg);
+    background-image: url(/assets/thumbnails/px200r.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_px200r, a:focus .tile_img_px200r{
-    background-image: url(/img/gifs/px200r.gif);
+    background-image: url(/assets/gifs/px200r.webp);
 }
 
 .tile_img_infinity_air{
-    background-image: url(/img/thumbnails/infinity_air.jpg);
+    background-image: url(/assets/thumbnails/infinity_air.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_infinity_air, a:focus .tile_img_infinity_air{
-    background-image: url(/img/gifs/infinity_air.gif);
+    background-image: url(/assets/gifs/infinity_air.webp);
 }
 
 .tile_img_pure{
-    background-image: url(/img/thumbnails/pure.jpg);
+    background-image: url(/assets/thumbnails/pure.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_pure, a:focus .tile_img_pure{
-    background-image: url(/img/gifs/pure.gif);
+    background-image: url(/assets/gifs/pure.webp);
 }
 
 .tile_img_variance{
-    background-image: url(/img/thumbnails/variance.jpg);
+    background-image: url(/assets/thumbnails/variance.jpg);
 }
 
 .tile_img_overcome{
-    background-image: url(/img/thumbnails/overcome.jpg);
+    background-image: url(/assets/thumbnails/overcome.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_overcome, a:focus .tile_img_overcome{
-    background-image: url(/img/gifs/overcome.gif);
+    background-image: url(/assets/gifs/overcome.webp);
 }
 
 .tile_img_davids{
-    background-image: url(/img/thumbnails/davids.jpg);
+    background-image: url(/assets/thumbnails/davids.jpg);
 }
 
 .tile_img_nepenthe{
-    background-image: url(/img/thumbnails/nepenthe.jpg);
+    background-image: url(/assets/thumbnails/nepenthe.jpg);
 }
 
 .tile_img_fantasy_tavern{
-    background-image: url(/img/thumbnails/fantasy_tavern.jpeg);
+    background-image: url(/assets/thumbnails/fantasy_tavern.jpeg);
 }
 
 .tile_img_mutant_opie{
-    background-image: url(/img/thumbnails/mutant_opie.jpg);
+    background-image: url(/assets/thumbnails/mutant_opie.jpg);
 }
 
 .tile_img_watermelon{
-    background-image: url(/img/thumbnails/watermelon.jpeg);
+    background-image: url(/assets/thumbnails/watermelon.jpeg);
 }
 
 .tile_overlay:hover ~ .tile_img_watermelon, a:focus .tile_img_watermelon{
-    background-image: url(/img/gifs/watermelon.gif);
+    background-image: url(/assets/gifs/watermelon.webp);
 }
 
 .tile_img_logos{
-    background-image: url(/img/thumbnails/logos.jpeg);
+    background-image: url(/assets/thumbnails/logos.jpeg);
 }
 
 .tile_img_lollipop{
-    background-image: url(/img/thumbnails/lollipop.jpeg);
+    background-image: url(/assets/thumbnails/lollipop.jpeg);
 }
 
 .tile_img_balloon{
-    background-image: url(/img/thumbnails/balloon.jpg);
+    background-image: url(/assets/thumbnails/balloon.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_balloon, a:focus .tile_img_balloon{
-    background-image: url(/img/gifs/balloon.gif);
+    background-image: url(/assets/gifs/balloon.webp);
 }
 
 .tile_img_la_rosa{
-    background-image: url(/img/thumbnails/la_rosa.jpeg);
+    background-image: url(/assets/thumbnails/la_rosa.jpeg);
 }
 
 .tile_img_build_a_pet{
-    background-image: url(/img/thumbnails/build_a_pet.jpg);
+    background-image: url(/assets/thumbnails/build_a_pet.jpg);
 }
 
 .tile_img_free_yourself{
-    background-image: url(/img/thumbnails/free_yourself.jpg);
+    background-image: url(/assets/thumbnails/free_yourself.jpg);
 }
 
 .tile_img_turndown_cookie{
-    background-image: url(/img/thumbnails/turndown_cookie.jpg);
+    background-image: url(/assets/thumbnails/turndown_cookie.jpg);
 }
 
 .tile_overlay:hover ~ .tile_img_turndown_cookie, a:focus .tile_img_turndown_cookie{
-    background-image: url(/img/gifs/turndown_cookie.gif);
+    background-image: url(/assets/gifs/turndown_cookie.webp);
 }
 
 .tile_img_weddings{
-    background-image: url(/img/thumbnails/weddings.jpeg);
+    background-image: url(/assets/thumbnails/weddings.jpeg);
 }
 
 .tile_overlay:hover ~ .tile_img_weddings, a:focus .tile_img_weddings{
-    background-image: url(/img/gifs/weddings.gif);
+    background-image: url(/assets/gifs/weddings.webp);
 }
 
 /* Preload Gifs */
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:
-        url(/img/gifs/cush-tech.gif) url(/img/gifs/hex_x_talon.gif) url(/img/gifs/px200r.gif) url(/img/gifs/infinity_air.gif) url(/img/gifs/pure.gif) url(/img/gifs/overcome.gif) url(/img/gifs/watermelon.gif) url(/img/gifs/balloon.gif) url(/img/gifs/turndown_cookie.gif) url(/img/gifs/weddings.gif);
+        url(/assets/gifs/cush-tech.webp) url(/assets/gifs/hex_x_talon.webp) url(/assets/gifs/px200r.webp) url(/assets/gifs/infinity_air.webp) url(/assets/gifs/pure.webp) url(/assets/gifs/overcome.webp) url(/assets/gifs/watermelon.webp) url(/assets/gifs/balloon.webp) url(/assets/gifs/turndown_cookie.webp) url(/assets/gifs/weddings.webp);
  }
 
 @media (min-width: 640px) {

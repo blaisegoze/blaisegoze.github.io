@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
     font-family: ArcaMajora3-Bold;
-    src: url("../fonts/ArcaMajora3-Bold.otf") format('opentype');
+    src: url("../assets/fonts/ArcaMajora3-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: ArcaMajora3-Heavy;
-    src: url("../fonts/ArcaMajora3-Heavy.otf") format('opentype');
+    src: url("../assets/fonts/ArcaMajora3-Heavy.otf") format('opentype');
 }
 
 
