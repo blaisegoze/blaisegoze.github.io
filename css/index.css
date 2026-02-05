@@ -1,6 +1,6 @@
-/* Hero Image */
+/* Hero Video */
 .hero{
-    height: 100svh;
+    height: 90svh;
     margin-bottom: -60px;
 }
 
@@ -29,9 +29,9 @@
 .hero_vector {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     width: 100%;
     max-width: 1100px;
     padding: 0 20px;
@@ -60,9 +60,9 @@
 .hero_content{
     justify-content: flex-end;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -90%);
     width: 100%;
 }
 
@@ -372,6 +372,7 @@ body::after{
     width: 100%;
     align-items: center;
     padding: 100px 0 0 0;
+    margin-bottom: 15svh;
 }
 
 .clients_content{
@@ -428,47 +429,45 @@ body::after{
 }
 
 #resume{
-    height: 100svh;
+    height: 72svh;
+    width: 100%;
     position: relative;
-}
-
-.resume_circle{
-    aspect-ratio: auto 1/1;
-    max-height: 74%;
-    width: 74%;
-    background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #462c27 99%, transparent 99%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 }
 
 .resume_imgs{
+    width: 42%;
     height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 -300px 0 15px;
+    z-index: 1;
+    
 }
 
 .resume_img{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    filter: brightness(30%);
 }
 
 .resume_text{
+    width: 63%;
+    height: 280px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    margin: 0px 15px 0px 0px;
+    padding: 0px 40px 18px 0px;
+    background: linear-gradient(135deg, #462c27 30%, #462c2718 80%);
+    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.9px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%,);
 }
 
 .resume_title{
@@ -482,13 +481,34 @@ body::after{
     font-size: 14px;
 }
 
+.resume_body{
+    margin: 20px 0 0 0;
+}
+
 @media screen and (max-width:768px){
-    .resume_circle{
-        display: none;
+    #resume{
+        height: 90svh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .resume_imgs{
+        width: 100%;
+        height: 50%;
+        margin: 0px 0px -20px 0px;
+    }
+    
+    .resume_text{
+        max-width: 80%;
+        min-width: 340px;
+        height: 218px;
+        justify-content: center;
+        padding: 0px 0px 18px 0px;
+        margin: 0 15px;
     }
 
     .resume_title{
-        font-size: 70px;
+        font-size: 78px;
     }
 }
 
@@ -502,57 +522,51 @@ body::after{
 }
 
 #about{
-    height: 100svh;
+    height: 72svh;
+    width: 100%;
     position: relative;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    overflow: visible;
 }
 
-.about_circle{
-    aspect-ratio: auto 1/1;
-    max-height: 74%;
-    width: 74%;
-    background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #1F2E3C 99%, transparent 99%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+.about_imgs{
+    width: 38%;
+    height: 100%;
+    align-content: center;
+    text-align: right;
+    margin: 0 15px 0 -300px;
+    z-index: 1;
 }
 
 .about_img{
-  width: 40%;
-  height: 100%;
-  object-fit: contain;
-  position: absolute;
-  top: 50%;
-  left: 70.5%;
-  transform: translate(-50%, -50%);
-  
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .about_text{
+    width: 67%;
+    height: 360px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    text-align: left;
     color: white;
-    padding: 0px 40px 0 40px;
-    width: 59%;
-    position: absolute;
-    top: 52%;
-    left: 37.5%;
-    transform: translate(-50%, -50%);
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 18px 40px;
+    background: linear-gradient(-135deg, #1F2E3C 30%, #1F2E3C18 80%);
+    border: 1px solid hsla(207, 46%, 75%, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.9px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%,);
 }
 
 .about_title{
-    font-size: 133px;
-    line-height: 160px;
+    font-size: 80px;
+    line-height: 100px;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg, #76a1e7 20%, #b7caee 60%);
     color: transparent;
@@ -564,64 +578,41 @@ body::after{
 }
 
 .about_body{
+    width: 70%;
     margin: 5px 0 0 30px;
     text-align: left;
     font-size: 15px;
     line-height: 2;
 }
 
-@media screen and (max-width:950px){
-    .about_text{
-        width: 54%;
-    }
-
-    .about_title{
-        font-size: 96px;
-        line-height: 120px;
-    }
-}
-
 @media screen and (max-width:768px){
     #about{
+        height: 90svh;
         flex-direction: column;
-        min-height: 750px;
+        justify-content: center;
     }
 
-    .about_circle{
-        display: none;
-    }
-
-    .about_img{
-        width: 40%;
-        top: 32%;
-        transform: translate(-50%, -50%);
+    .about_imgs{
+        width: 100%;
+        height: 50%;
+        margin: 0px 0px -20px 0px;
     }
     
     .about_text{
-        width: 100%;
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0%, 0%);
+        max-width: 80%;
+        min-width: 340px;
+        height: 450px;
+        justify-content: center;
+        padding: 0px 15px 15px 15px;
+        margin: 0 15px;
     }
 
     .about_title{
-        font-size: 65px;
-        line-height: 85px;
+        font-size: 78px;
     }
 
-    .about_sub_title{
-        margin: 0 0 0 10px;
-    }
-    
     .about_body{
-        margin: 5px 0 0 12px;
-    }
-}
-
-@media screen and (max-width:400px){
-    .about_img{
-        top: 23%;
+        width: inherit;
     }
 }
 
@@ -635,35 +626,21 @@ body::after{
 }
 
 #contact{
-    height: 100svh;
+    height: 72svh;
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-}
-
-.contact_circle{
-    aspect-ratio: auto 1/1;
-    max-height: 74%;
-    width: 74%;
-    background: radial-gradient(50% 50% at 50% 50%, #000000 80%, #462c27 99%, transparent 99%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+    margin-bottom: 15svh;
 }
 
 .contact_imgs{
     width: 45%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 -60px 0 15px;
+    margin: 0 -300px 0 15px;
+    z-index: 1;
 }
 
 .contact_img{
@@ -673,11 +650,21 @@ body::after{
 }
 
 .contact_text{
+    width: 60%;
+    height: 280px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
     color: white;
-    margin: 60px 40px 0 40px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px 40px 18px 0px;
+    background: linear-gradient(135deg, #462c27 30%, #462c2718 80%);
+    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5.9px);
+    box-shadow: 0 8px 32px 0 hsla(0, 0%,);
 }
 
 .contact_title{
@@ -697,24 +684,24 @@ body::after{
 
 @media screen and (max-width:768px){
     #contact{
+        height: 90svh;
         flex-direction: column;
-    }
-
-    .contact_circle{
-        display: none;
+        justify-content: center;
     }
 
     .contact_imgs{
         width: 100%;
-        height: 40%;
-        margin: 0;
-        align-items: flex-end;
+        height: 50%;
+        margin: 0px 0px -20px 0px;
     }
     
     .contact_text{
-        height: 30%;
-        align-items: start;
-        margin: 0 40px 0 40px;
+        max-width: 80%;
+        min-width: 340px;
+        height: 218px;
+        justify-content: center;
+        padding: 0px 0px 18px 0px;
+        margin: 0 15px;
     }
 
     .contact_title{
