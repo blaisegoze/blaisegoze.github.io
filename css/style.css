@@ -81,8 +81,10 @@ a:hover svg, a:focus svg{
 .btn_brown{
     display: inline-block;
     padding: 10px 30px;
-    background-color: hsl(10, 40%, 59%, 20%);
-    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    background: linear-gradient(135deg, hsl(10, 40%, 59%, 80%) 10%, hsl(10, 40%, 59%, 20%) 50%, hsla(0, 0%, 0%, 30%) 90%);
+    background-size: 200%;
+    background-position: 100% 0;
+    border: 1px solid hsla(10, 30%, 30%);
     border-radius: 20px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5.9px);
@@ -91,8 +93,9 @@ a:hover svg, a:focus svg{
 }
 
 .btn_brown:hover, .btn_brown:focus{
-    background-color: hsl(10, 40%, 59%, 50%);
-    border: 1px solid hsla(13, 63%, 80%, 0.6);
+    background-size: 180%;
+    background-position: 0% 0; 
+    border: 1px solid hsla(13, 63%, 70%);
 }
 
 /* Containers */

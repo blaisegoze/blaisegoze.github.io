@@ -460,10 +460,10 @@ body::after{
     align-items: center;
     text-align: center;
     color: white;
+    padding: 0px 40px 20px 0px;
     margin: 0px 15px 0px 0px;
-    padding: 0px 40px 18px 0px;
-    background: linear-gradient(135deg, #462c27 30%, #462c2718 80%);
-    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    background: linear-gradient(135deg, hsla(10, 40%, 59%, 50%) 25%, hsl(10, 40%, 59%, 30%) 40%, hsla(10, 40%, 59%, 0) 80%);
+    border: 1px solid hsla(10, 30%, 30%);
     border-radius: 20px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5.9px);
@@ -499,12 +499,11 @@ body::after{
     }
     
     .resume_text{
-        max-width: 80%;
-        min-width: 340px;
-        height: 218px;
+        width: initial;
+        height: initial;
         justify-content: center;
-        padding: 0px 0px 18px 0px;
-        margin: 0 15px;
+        padding: 120px 40px 35px 40px;
+        margin: -100px 15px 0 15px;
     }
 
     .resume_title{
@@ -554,10 +553,10 @@ body::after{
     align-items: center;
     text-align: left;
     color: white;
+    padding: 0px 0px 20px 40px;
     margin: 0px 0px 0px 15px;
-    padding: 0px 0px 18px 40px;
-    background: linear-gradient(-135deg, #1F2E3C 30%, #1F2E3C18 80%);
-    border: 1px solid hsla(207, 46%, 75%, 0.1);
+    background: linear-gradient(-135deg, hsl(209, 32%, 25%) 25%, hsl(209, 32%, 18%) 40%, hsla(209, 32%, 18%, 0.094) 80%);
+    border: 1px solid hsla(207, 30%, 30%);
     border-radius: 20px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5.9px);
@@ -587,7 +586,7 @@ body::after{
 
 @media screen and (max-width:768px){
     #about{
-        height: 90svh;
+        height: 100svh;
         flex-direction: column;
         justify-content: center;
     }
@@ -600,11 +599,11 @@ body::after{
     
     .about_text{
         max-width: 80%;
-        min-width: 340px;
-        height: 450px;
+        min-width: 370px;
+        height: initial;
         justify-content: center;
-        padding: 0px 15px 15px 15px;
-        margin: 0 15px;
+        padding: 120px 40px 35px 40px;
+        margin: -100px 15px 0 15px;
     }
 
     .about_title{
@@ -657,10 +656,10 @@ body::after{
     align-items: center;
     text-align: center;
     color: white;
+    padding: 0px 40px 20px 0px;
     margin: 0px 15px 0px 0px;
-    padding: 0px 40px 18px 0px;
-    background: linear-gradient(135deg, #462c27 30%, #462c2718 80%);
-    border: 1px solid hsla(13, 62%, 80%, 0.1);
+    background: linear-gradient(135deg, hsla(10, 40%, 59%, 50%) 25%, hsl(10, 40%, 59%, 30%) 40%, hsla(10, 40%, 59%, 0) 80%);
+    border: 1px solid hsla(10, 30%, 30%);
     border-radius: 20px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(5.9px);
@@ -696,12 +695,11 @@ body::after{
     }
     
     .contact_text{
-        max-width: 80%;
-        min-width: 340px;
-        height: 218px;
+        width: initial;
+        height: initial;
         justify-content: center;
-        padding: 0px 0px 18px 0px;
-        margin: 0 15px;
+        padding: 120px 40px 35px 40px;
+        margin: -100px 15px 0 15px;
     }
 
     .contact_title{
