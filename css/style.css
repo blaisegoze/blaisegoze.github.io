@@ -76,6 +76,7 @@ a:hover svg, a:focus svg{
 .btn_clear:hover, .btn_clear:focus{
     background-color: hsla(0, 0%, 0%, 0.08);
     border: 1px solid hsla(0, 0%, 100%, 0.5);
+    scale: 105%;
 }
 
 .btn_brown{
@@ -96,6 +97,7 @@ a:hover svg, a:focus svg{
     background-size: 180%;
     background-position: 0% 0; 
     border: 1px solid hsla(13, 63%, 70%);
+    scale: 105%;
 }
 
 /* Containers */
