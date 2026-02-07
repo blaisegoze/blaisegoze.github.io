@@ -38,6 +38,16 @@
     fill: hsl(0, 0%, 100%);
 }
 
+.hero_btn{
+    margin-top: 24px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hero_btn_play{
+    height: 14px;
+    margin: 0px 6px -1px 0px;
+}
+
 .hero_vector_desktop {
     display: block;
 }
