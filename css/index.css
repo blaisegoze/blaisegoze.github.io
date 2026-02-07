@@ -45,6 +45,7 @@
 
 .hero_btn_play{
     height: 14px;
+    fill: hsl(0,0%,70%);
     margin: 0px 6px -1px 0px;
 }
 
