@@ -50,7 +50,7 @@ a:hover, a:focus{
     color: hsl(0,0%,100%);
 }
 
-.text_link{
+.text-link{
     color: hsl(0,0%,45%);
 }
 
@@ -64,7 +64,7 @@ a:hover svg, a:focus svg{
 }
 
 /* Buttons */
-.btn_clear{
+.btn-clear{
     display: inline-block;
     padding: 10px 30px;
     background-color: hsla(0, 0%, 100%, 10%);
@@ -79,14 +79,14 @@ a:hover svg, a:focus svg{
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.btn_clear:hover, .btn_clear:focus{
+.btn-clear:hover, .btn-clear:focus{
     background-size: 180%;
     background-position: 0% 0; 
     border: 1px solid hsla(0, 0%, 100%, 80%);
     scale: 105%;
 }
 
-.btn_brown{
+.btn-brown{
     display: inline-block;
     padding: 10px 30px;
     background: linear-gradient(135deg, hsl(10, 40%, 59%, 80%) 10%, hsl(10, 40%, 59%, 20%) 50%, hsla(0, 0%, 0%, 30%) 90%);
@@ -100,7 +100,7 @@ a:hover svg, a:focus svg{
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.btn_brown:hover, .btn_brown:focus{
+.btn-brown:hover, .btn-brown:focus{
     background-size: 180%;
     background-position: 0% 0; 
     border: 1px solid hsla(13, 63%, 70%);
@@ -148,7 +148,7 @@ nav{
     z-index: 2;
 }
 
-.nav_content{
+.nav-content{
     margin: 0 auto;
     max-width: 980px;
     min-height: 60px;
@@ -168,39 +168,39 @@ nav{
     fill: hsl(0,0%,100%);
 }
 
-.nav_links{
+.nav-links{
     display: flex;
     justify-content: space-between;
     width: 40%;
 }
 
-.nav_links li{
+.nav-links li{
     list-style: none;
 }
 
-.nav_links a{
+.nav-links a{
     color: hsl(0,0%,70%);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.nav_links a:hover, .nav_links a:focus{
+.nav-links a:hover, .nav-links a:focus{
     color: hsl(0,0%,100%);
 }
 
-.nav_content a.active{
+.nav-content a.active{
     color: hsl(0,0%,100%);
     fill: hsl(0,0%,100%);
 }
 
 /* Menu Burger */
-.menu_burger{
+.menu-burger{
     display: none;
     cursor: pointer;
 }
 
-.menu_burger div{
+.menu-burger div{
     background-color: hsl(0,0%,70%);
     width: 25px;
     height: 3px;
@@ -208,12 +208,12 @@ nav{
     transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.menu_burger:hover div{
+.menu-burger:hover div{
     background-color: hsl(0,0%,100%);
 }
 
 @media screen and (max-width:768px){
-    .nav_links{
+    .nav-links{
         position: absolute;
         justify-content: space-around;
         height: 45vh;
@@ -226,22 +226,22 @@ nav{
         transform: translateY(-100%);
         z-index: -1;
     }
-    .nav_links li{
+    .nav-links li{
         opacity: 0;
     }
-    .menu_burger{
+    .menu-burger{
         display: block;
         margin: -5px;
     }
 }
 
 /* Navigation Links Dropdown Animation */
-.nav_links_active{
+.nav-links-active{
     transform: translateY(0%);
     transition: transform 0.3s ease-in;
 }
 
-.nav_active{
+.nav-active{
     padding-bottom: 200vh;
     transition: padding 0.4s ease-in;
 }
@@ -279,7 +279,7 @@ footer{
     background-color: hsl(0, 0%, 0%);
 }
 
-.footer_content{
+.footer-content{
     margin: 0 auto;
     max-width: 980px;
     min-height: 60px;
@@ -289,33 +289,33 @@ footer{
     align-items: center;
 }
 
-.footer_text{
+.footer-text{
     color: hsl(0,0%,70%);
     font-size: 10px;
 }
 
-.footer_links{
+.footer-links{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 150px;
 }
 
-.footer_links li{
+.footer-links li{
     list-style: none;
 }
 
-.footer_links a{
+.footer-links a{
     display: flex;
     align-items: center;
 }
 
-.footer_content svg{
+.footer-content svg{
     fill: hsl(0,0%,70%);
     height: 24px;
     transition: fill 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.footer_content svg:hover{
+.footer-content svg:hover{
     fill: hsl(0,0%,100%);
 }

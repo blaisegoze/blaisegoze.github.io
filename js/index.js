@@ -36,7 +36,7 @@ const navScroll = () => {
 
 const navScrollHighlight = () => {
     const section = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('nav .nav_content a');
+    const navLi = document.querySelectorAll('nav .nav-content a');
 
     window.addEventListener('scroll', ()=> {
         let current = '';
@@ -62,8 +62,8 @@ const navScrollHighlight = () => {
 
 const navPortfolio = () => {
     // Selecting all required elements
-    const filterBtn = document.querySelector(".portfolio_nav_btns");
-    const filterTile = document.querySelectorAll(".gallery_tile");
+    const filterBtn = document.querySelector(".portfolio-nav-btns");
+    const filterTile = document.querySelectorAll(".gallery-tile");
 
     window.onload = ()=>{ //once window loaded
         filterBtn.onclick = (selectedBtn)=>{ //when user clicked on filterBtn button
@@ -71,16 +71,16 @@ const navPortfolio = () => {
                 filterBtn.querySelector(".active").classList.remove("active"); //remove the active class which is in the first element
                 selectedBtn.target.classList.add("active"); //add that active class on user clicked button
                 let filterName = selectedBtn.target.getAttribute("data-name"); //getting data-name value of the user clicked btn and storing it in a filterName variable
-                filterTile.forEach((gallery_tile)=>{
-                    let filterTiles = gallery_tile.getAttribute("data-name"); //get image data-name value
+                filterTile.forEach((galleryTile)=>{
+                    let filterTiles = galleryTile.getAttribute("data-name"); //get image data-name value
                     //if user clicked tile data-name value is equal to image data-name value
                     //or user clicked tile data-name value is equal to "all"
                     if((filterTiles.includes(filterName)) || filterName == "all"){
-                        gallery_tile.classList.remove("hide");
-                        gallery_tile.classList.add("show");
+                        galleryTile.classList.remove("hide");
+                        galleryTile.classList.add("show");
                     }else{
-                        gallery_tile.classList.add("hide");
-                        gallery_tile.classList.remove("show");
+                        galleryTile.classList.add("hide");
+                        galleryTile.classList.remove("show");
                     }
                 });
             }

@@ -1,5 +1,5 @@
 /* Project */
-.background_project{
+.background-project{
     position: fixed;
     left: 0;
     right: 0;
@@ -16,7 +16,7 @@
 
 }
 
-.project_content{
+.project-content{
     margin: 0 auto;
     max-width: 1920px;
     min-height: 100vh;
@@ -25,7 +25,7 @@
 
 }
 
-.project_border_info {
+.project-border-info {
     padding: 30px 20px 30px 20px;
     min-width: 440px;
     max-width: 440px;
@@ -36,7 +36,7 @@
     top: 28vh;
 }
 
-.project_info{
+.project-info{
     padding: 30px 20px 30px 20px;
     display: flex;
     flex-direction: column;
@@ -46,11 +46,11 @@
     box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 30%);
 }
 
-.project_text{
+.project-text{
 
 }
 
-.project_title{
+.project-title{
     color: hsl(0,0%,100%);
     text-align: center;
     font-size: 30px;
@@ -58,25 +58,25 @@
     padding-bottom: 12px;
 }
 
-.project_description{
+.project-description{
     color: hsl(0,0%,70%);
     text-align: left;
     font-size: 14px;
 }
 
-.software_used{
+.software-used{
     padding: 25px 0px 0px 0px;
     margin: 0 auto;
 }
 
-.software_icons{
+.software-icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
-.software_icon{
+.software-icon{
     width: 32px;
     height: 32px;
     margin: 0 12px;
@@ -84,11 +84,11 @@
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.software_icon:hover{
+.software-icon:hover{
     filter: grayscale(0%);
 }
 
-.software_icon_01{
+.software-icon-01{
     width: 32px;
     height: 32px;
     margin: 0 12px;
@@ -96,11 +96,11 @@
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.software_icon_01:hover{
+.software-icon-01:hover{
     filter: grayscale(0%);
 }
 
-.project_imgs{
+.project-imgs{
     margin-top: 60px;
     z-index: 0;
     width: 100%;
@@ -108,30 +108,30 @@
     background: hsla(0, 0%, 0%, 40%);
 }
 
-.project_img {
+.project-img {
     display: block;
     width: 100%;
     max-height: 95.4vh;
     object-fit: contain;
 }
 
-.project_vid_link {
+.project-vid-link {
     display: block;
     width: 100%;
     aspect-ratio: 16/9;
     border: none;
 }
 
-.aspect_ratio_1 {
+.aspect-ratio-1 {
     aspect-ratio: 2/1;
 }
 
-.aspect_ratio_2 {
+.aspect-ratio-2 {
     aspect-ratio: 320/143;
 }
 
 /* Arrows for Navigation */
-.project_arrows{
+.project-arrows{
     position: sticky;
     top: 50%;
     height: 0;
@@ -147,35 +147,35 @@
     stroke-width: 5px;
 }
 
-.project_arrows li{
+.project-arrows li{
     width: 20px;
     height: 20px;
     list-style: none;
     margin: 0 10px;
 }
 
-.project_arrow_left svg, .project_arrow_right svg{
+.project-arrow-left svg, .project-arrow-right svg{
     stroke: hsla(0,0%,60%,40%);
     transition: stroke 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.project_arrow_left:hover svg, .project_arrow_right:hover svg, .project_arrow_left:focus svg, .project_arrow_right:focus svg, .arrow_right_link:focus svg, .arrow_left_link:focus svg{
+.project-arrow-left:hover svg, .project-arrow-right:hover svg, .project-arrow-left:focus svg, .project-arrow-right:focus svg, .arrow-right-link:focus svg, .arrow-left-link:focus svg{
     fill: none;
     stroke: hsla(0,0%,100%,100%);
     transition: stroke 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 @media screen and (max-width:992px){
-    .project_content{
+    .project-content{
         flex-direction: column;
         align-items: center;
     }
 
-    .project_arrows{
+    .project-arrows{
         padding-right: 0px;
     }
 
-    .project_border_info{
+    .project-border-info{
         padding: 90px 20px 30px 20px;
         position: unset;
         min-width: auto;
@@ -184,7 +184,7 @@
         height: auto;
     }
 
-    .project_imgs{
+    .project-imgs{
         margin-right: 0px;
         margin-top: 0px;
     }
