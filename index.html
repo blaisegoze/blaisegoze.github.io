@@ -53,7 +53,6 @@
     </div>
   </nav>
 
-
   <!-- Home -->
   <section id="home" class="hero">
     <div class="hero-vector conceal">
@@ -133,14 +132,23 @@
           </g>
         </g>
       </svg>
-      <a class="hero-btn btn-clear conceal" href="https://youtu.be/OixT9ifYYZA" target="_blank" rel="noopener noreferrer">
+
+      <!-- Showreel Modal Button -->
+      <button id="showreel-modal-open" class="hero-btn btn-clear conceal">
         <svg class="hero-btn-play" viewBox="0 0 17.54 20.12">
           <g>
             <path class="cls-1" d="M17.32,9.68L.66.06c-.29-.17-.66.04-.66.38v19.23c0,.34.37.55.66.38l16.66-9.62c.29-.17.29-.6,0-.77Z"/>
           </g>
         </svg>
         Showreel
-      </a>
+      </button>
+      
+      <!-- Showreel Modal -->
+      <dialog id="showreel-modal">
+          <button id="showreel-modal-close">×</button>
+          <iframe id="showreel-modal-iframe" src="" allow="autoplay" allowfullscreen></iframe>
+      </dialog>
+
     </div>
     <div class="hero-content footer-content conceal">
       <ul class="footer-links">
@@ -164,6 +172,7 @@
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </section>
+
 
   <!-- Portfolio -->
   <section id="portfolio">

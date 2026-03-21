@@ -58,6 +58,37 @@ const navScrollHighlight = () => {
 }
 
 
+////// Showreel Modal //////
+
+const showreelModal = () => {
+    const modal = document.getElementById('showreel-modal');
+    const openModal = document.getElementById('showreel-modal-open');
+    const closeModal = document.getElementById('showreel-modal-close');
+    const iframe = document.getElementById('showreel-modal-iframe');
+
+    const embedUrl = `https://www.youtube.com/embed/OixT9ifYYZA?si=mFs3rGCA2x7olnQ2&autoplay=1&mute=0&loop=1&controls=1&color=black&modestbranding=0&rel=0&playsinline=1&enablejsapi=1&playlist=OixT9ifYYZA`;
+
+    openModal.addEventListener('click', () => {
+        modal.showModal();
+        iframe.src = embedUrl;
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.close();
+        iframe.src = '';
+    });
+
+    // Close when clicking outside the dialog content
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.close();
+            iframe.src = '';
+        }
+    });
+    
+}
+
+
 ////// Nav Portfolio //////
 
 const navPortfolio = () => {
@@ -111,5 +142,6 @@ onclick = ()=>{
 
 navScroll();
 navScrollHighlight();
+showreelModal();
 navPortfolio();
 //websiteAlert();
