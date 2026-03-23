@@ -84,6 +84,8 @@ dialog::backdrop {
 }
 
 #showreel-modal {
+    display: block;
+    aspect-ratio: 16/9;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -92,10 +94,21 @@ dialog::backdrop {
     max-height: min(90vh, 720px);
     border: none;
     border-radius: 10px;
-    z-index: 3;
     overflow: hidden;
-    background: none;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    background: hsl(0, 0%, 0%);
+} 
+
+#showreel-modal[open] {
+    opacity: 1;
+    visibility: visible;
+    transition: 1s cubic-bezier(0.25, 0.1, 0.25, 1), scale 0.3s cubic-bezier(0.42, 0, 0, 1);
+}
+
+#showreel-modal:not([open]) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -40%);
+    pointer-events: none;
 }
 
 #showreel-modal iframe {
@@ -111,7 +124,7 @@ dialog::backdrop {
     width: 34px;
     height: 34px;
     font-size: 24px;
-    z-index: 3;
+    border-radius: 10px;
 }
 
 

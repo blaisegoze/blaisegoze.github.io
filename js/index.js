@@ -86,6 +86,10 @@ const showreelModal = () => {
         }
     });
     
+    // End video when closing by escape key
+    modal.addEventListener('close', () => {
+        iframe.src = '';
+    });
 }
 
 
