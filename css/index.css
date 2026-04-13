@@ -78,9 +78,19 @@
 }
 
 /* Showreel Modal */
-dialog::backdrop {
-    background-color: hsla(0, 0%, 0%, 0.8);
-    backdrop-filter: saturate(180%) blur(20px);
+dialog[open]::backdrop {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  backdrop-filter: saturate(180%) blur(15px);
+  opacity: 1;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.25, 1), scale 0.3s cubic-bezier(0.42, 0, 0, 1);
+}
+
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: saturate(0%) blur(0px);
+    opacity: 0;
+  }
 }
 
 #showreel-modal {
@@ -101,7 +111,7 @@ dialog::backdrop {
 #showreel-modal[open] {
     opacity: 1;
     visibility: visible;
-    transition: 1s cubic-bezier(0.25, 0.1, 0.25, 1), scale 0.3s cubic-bezier(0.42, 0, 0, 1);
+    transition: 1.5s cubic-bezier(0.25, 0.1, 0.25, 1), scale 0.3s cubic-bezier(0.42, 0, 0, 1);
 }
 
 #showreel-modal:not([open]) {
